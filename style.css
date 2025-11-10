@@ -1,0 +1,38 @@
+/* ページ全体の中央揃えと背景色 */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+}
+
+/* 電卓全体の背景・影・丸み */
+.calculator {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+#display {
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: right;
+  padding: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-gap: 10px;
+}
+
+button {
+  height: 60px;
+  font-size: 20px;
+  cursor: pointer;
+}
