@@ -5,19 +5,19 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #f0f0f0;
+  background: #808080;
 }
 
 /* 電卓全体の背景・影・丸み */
 .calculator {
-  background: #fff;
+  background: #e2e2e2;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
 }
 
 #display {
-  width: 100%;
+  width: 95%;
   height: 50px;
   font-size: 24px;
   margin-bottom: 10px;
@@ -27,7 +27,7 @@ body {
 
 .buttons {
   display: grid;
-  grid-template-columns: repeat(4, 60px);
+  grid-template-columns: repeat(4, 70px);
   grid-gap: 10px;
 }
 
