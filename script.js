@@ -31,3 +31,18 @@ equals.addEventListener('click', () => {
 clear.addEventListener('click', () => {
   display.value = '';
 });
+
+// キーボード入力対応
+document.addEventListener("keydown", function(event) {
+  console.log("押したキー:", event.key);
+  if (0 <= event.key && event.key <= 9)
+    display.value += event.key;
+  else if (["+", "-", "*", "/"].includes(event.key))
+    display.value += event.key;
+  else if (event.key === "Enter")
+    equals.click();
+  else if (event.key === "Escape")
+    clear.click();
+  else if (event.key === "Backspace")
+    display.value = display.value.slice(0, -1);
+});
